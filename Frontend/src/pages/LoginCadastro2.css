@@ -1,0 +1,63 @@
+/* Estilização geral do container */
+.auth-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f3fdf4;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Título principal */
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e8b57;
+}
+
+/* Campos de entrada */
+.auth-container input,
+.auth-container select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Botão principal */
+.auth-container button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #276c48;
+}
+
+/* Botão de alternância de tela */
+.btn-link {
+  background: none;
+  border: none;
+  color: #2e8b57;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Feedback (sucesso ou erro) */
+.auth-container p {
+  text-align: center;
+  font-size: 1rem;
+}

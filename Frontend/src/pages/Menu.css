@@ -1,0 +1,38 @@
+/* Menu de navegação horizontal */
+
+.menu {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu .menu-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu .menu-links a:hover {
+  background-color: #45a049;
+  color: #ffffff;
+}
+
+/* Conteúdo das páginas */
+.page-content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}

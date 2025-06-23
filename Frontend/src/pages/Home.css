@@ -1,0 +1,81 @@
+/* ============================
+   Estilo Geral da Página Home
+============================= */
+.home-container {
+  font-family: Arial, sans-serif;         /* Fonte padrão da página */
+  background-color: #f0f5f3;              /* Fundo suave verde claro */
+  padding-bottom: 40px;                   /* Espaço inferior para evitar colar no rodapé */
+}
+
+/* ==============================
+   Carrossel de Imagens (Banner)
+=============================== */
+.carousel img {
+  width: 100%;                            /* Faz a imagem ocupar toda a largura disponível */
+  height: 500px;                          /* Altura fixa para desktop */
+  object-fit: cover;                      /* Faz a imagem "cortar" e preencher o espaço sem distorcer */
+  border-radius: 0;                       /* Sem bordas arredondadas */
+  margin-bottom: 30px;                    /* Espaço inferior entre o carrossel e o conteúdo abaixo */
+}
+
+/* Responsividade do carrossel para telas menores (celulares) */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 250px;                        /* Reduz a altura para dispositivos menores */
+  }
+}
+
+/* ============================
+   Customização das bolinhas (slick-dots)
+============================= */
+.slick-dots li button:before {
+  color: #333;          /* Cinza escuro: visível em fundo claro */
+  font-size: 12px;      /* Deixa os pontinhos um pouco maiores (opcional) */
+  opacity: 0.8;          /* Um pouco de transparência pra suavizar */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4CAF50;        /* Verde para indicar o dot ativo */
+  opacity: 1;            /* Ativo totalmente opaco */
+}
+
+
+
+/* ============================
+   Apresentação / Texto de Boas-vindas
+============================= */
+.apresentacao {
+  max-width: 1200px;              /* Aumenta a largura máxima do conteúdo */
+  margin: 20px auto 0 auto;        /* Diminui a margem de cima para reduzir espaço entre o carrossel */
+ 
+  padding: 40px;                   /* Aumenta o padding para dar mais respiro nas laterais */
+  border-radius: 12px;             /* Cantos arredondados */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);  /* Sombra suave */
+  text-align: center;              /* Centraliza o conteúdo */
+}
+
+.apresentacao h2 {
+  font-size: 32px;                 /* Título maior */
+  margin-bottom: 20px;             /* Mais espaço abaixo do título */
+  color: #2d3e2f;                  /* Verde escuro */
+}
+
+.apresentacao p {
+  font-size: 18px;                 /* Texto um pouco maior */
+  line-height: 1.8;                /* Espaçamento entre linhas maior para leitura */
+  color: #444;                     /* Texto com cor mais escura para contraste */
+  text-align: justify;             /* Faz o texto preencher horizontalmente */
+  text-justify: inter-word;        /* Justificação por palavras */
+  padding: 0 20px;                 /* Pequeno espaço lateral no texto */
+}
+
+
+/* ============================
+   Ajuste global para evitar Scroll horizontal
+============================= */
+body {
+  overflow-x: hidden;                     /* Remove a barra de rolagem horizontal */
+}
+
+
+
